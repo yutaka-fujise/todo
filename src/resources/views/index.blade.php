@@ -12,7 +12,10 @@
 </div>
 
 <div class="todo__content">
-  <form class="create-form">
+  <!-- <form class="create-form"> -->
+    <form class="create-form" action="/todos" method="post">
+    @csrf
+    <!-- formタグの method属性と action属性を設定し、store アクションを呼び出すルーティングと紐付け。@csrfをつけ忘れると、419エラーが返ってきます。 419エラーが出たら、@csrfのつけ忘れ -->
     <div class="create-form__item">
       <input class="create-form__item-input" type="text" name="content">
     </div>
