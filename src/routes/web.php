@@ -20,3 +20,5 @@ Route::get('/', function () {
 Route::get('/', [TodoController::class, 'index']);
 // URL と controller のアクションを紐付け、特定の URL にアクセスしたら処理が行われるよう設定
     Route::post('/todos', [TodoController::class, 'store']);
+    Route::patch('/todos/update', [TodoController::class, 'update']);
+Route::delete('/todos/delete', [TodoController::class, 'destroy']);
