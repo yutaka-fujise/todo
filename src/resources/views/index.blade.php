@@ -28,8 +28,9 @@
   <form class="create-form" action="/todos" method="post">
     @csrf
     <div class="create-form__item">
-      <input class="create-form__item-input" type="text" name="content">
-      value="{{ old('content')}}"/>
+      <input class="create-form__item-input" type="text" name="content"
+      value="{{ old('content') }}"
+      />
       <select class="create-form__item-select">
         <option value="">カテゴリ</option>
       </select>
@@ -43,13 +44,15 @@
   </div>
   <form class="search-form">
     <div class="search-form__item">
-      <input class="search-form__item-input" type="text" />
+      <input class="search-form__item-input" type="text"/>
       <select class="search-form__item-select">
         <option value="">カテゴリ</option>
       </select>
     </div>
     <div class="search-form__button">
       <button class="search-form__button-submit" type="submit">検索</button>
+    </div>
+  </form>
   <div class="todo-table">
     <table class="todo-table__inner">
       <tr class="todo-table__row">
@@ -57,7 +60,7 @@
         // <th class="todo-table__header">Todo</th>?>
         <th class="Todo-table__header">
           <span class="Todo-table__header-span">Todo</span>
-          <span class="Todo-tavle__header-span">カテゴリ</span>
+          <span class="Todo-tale__header-span">カテゴリ</span>
         </th>
       </tr>
       @foreach ($todos as $todo)

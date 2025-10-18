@@ -23,6 +23,7 @@
           <li class="header-nav__item">
             <a class="header-nav__link" href="/categories">カテゴリー一覧</a>
           </li>
+        </ul>
       </nav>
     </div>
   </header>
